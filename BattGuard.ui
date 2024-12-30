@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BattGuard</class>
+ <widget class="QMainWindow" name="BattGuard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="NextButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>580</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NextButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PrevButton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>580</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PrevButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fastsearch">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>580</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>빠른 검사</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="slowsearch">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>580</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>정밀검사</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="image">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="outputtext">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>250</y>
+      <width>321</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBattGuard">
+    <property name="title">
+     <string>메뉴</string>
+    </property>
+    <addaction name="actionInput_folder"/>
+    <addaction name="action"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuBattGuard"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionInput_folder">
+   <property name="text">
+    <string>폴더 열기</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>종료</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>도움말</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
